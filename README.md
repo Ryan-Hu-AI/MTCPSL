@@ -12,8 +12,29 @@ This repository contains a PyTorch-based evaluation script for testing a **multi
 * Prediction of true/false news, propaganda type (e.g., Loaded Language, Exaggeration, Appeal to Fear), and a numeric propaganda level score.
 * Results saved to both JSON and MongoDB.
 * Automatic generation of evaluation metrics: Accuracy, F1-score, ROC-AUC, and MSE.
+* 你可以在 README 中加入一個新的區段，例如 **📥 Pretrained Model**，放在 `## 📦 Features` 或 `## 🚀 Quick Start` 前後都可以。以下是推薦的寫法：
 
----
+
+## 📥 Pretrained Model
+
+We provide a pretrained checkpoint of the **Multi-Task Counterpropaganda Semantic Learning (MTCPSL)** model for evaluation purposes.
+
+🔗 [Download Full Model Weights (Google Drive)](https://drive.google.com/drive/folders/1tjkFzr5lbVcb61y5Qn-D6OlP33Ulf3lq?usp=drive_link)
+
+After downloading:
+
+* Place the `.pt` checkpoint file (e.g., `MTCPSL_best_model.pt`) inside your `output/` directory, or anywhere you prefer.
+* Update the `--checkpoint_path` argument accordingly when running the evaluation script.
+
+Example:
+
+```bash
+python RoBERTa\ Large\ Based/test_SPRS_MTCPSL_P_Mask_R.py \
+    --checkpoint_path ./output/MTCPSL_best_model.pt \
+    --test_dataset politifact_SPRS_nonrepeat.jsonl \
+    --test_output_name politifact_SPRS_nr
+```
+
 
 ## 🧩 Project Structure
 
