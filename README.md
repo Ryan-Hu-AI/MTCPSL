@@ -5,14 +5,14 @@ This repository contains a PyTorch-based evaluation script for testing a **multi
 * Fake news detection
 * Propaganda type classification
 * Propaganda level score regression
-
+---
 ## 📦 Features
 
 * Support for multi-task evaluation using shared RoBERTa-based encoder.
 * Prediction of true/false news, propaganda type (e.g., Loaded Language, Exaggeration, Appeal to Fear), and a numeric propaganda level score.
 * Results saved to both JSON and MongoDB.
 * Automatic generation of evaluation metrics: Accuracy, F1-score, ROC-AUC, and MSE.
-
+---
 
 ## 📥 Pretrained Model
 
@@ -33,7 +33,7 @@ python RoBERTa\ Large\ Based/test_SPRS_MTCPSL_P_Mask_R.py \
     --test_dataset politifact_SPRS_nonrepeat.jsonl \
     --test_output_name politifact_SPRS_nr
 ```
-
+---
 
 ## 🧩 Project Structure
 
@@ -146,7 +146,7 @@ Each input sample in the JSONL file should contain:
 
 * Ensure your GPU is available and properly set via `CUDA_VISIBLE_DEVICES`.
 * If using a different model class, modify the `--prop_model` argument accordingly.
-* Default settings use seed `8` for reproducibility.
+* Default settings use seed `32` for reproducibility.
 
 ---
 
