@@ -12,7 +12,6 @@ This repository contains a PyTorch-based evaluation script for testing a **multi
 * Prediction of true/false news, propaganda type (e.g., Loaded Language, Exaggeration, Appeal to Fear), and a numeric propaganda level score.
 * Results saved to both JSON and MongoDB.
 * Automatic generation of evaluation metrics: Accuracy, F1-score, ROC-AUC, and MSE.
-* 你可以在 README 中加入一個新的區段，例如 **📥 Pretrained Model**，放在 `## 📦 Features` 或 `## 🚀 Quick Start` 前後都可以。以下是推薦的寫法：
 
 
 ## 📥 Pretrained Model
