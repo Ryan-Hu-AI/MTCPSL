@@ -14,27 +14,6 @@ This repository contains a PyTorch-based evaluation script for testing a **multi
 * Automatic generation of evaluation metrics: Accuracy, F1-score, ROC-AUC, and MSE.
 ---
 
-## 📥 Pretrained Model
-
-We provide a pretrained checkpoint of the **Multi-Task Counterpropaganda Semantic Learning (MTCPSL)** model for evaluation purposes.
-
-🔗 [Download Full Model Weights (Google Drive)](https://drive.google.com/drive/folders/1tjkFzr5lbVcb61y5Qn-D6OlP33Ulf3lq?usp=drive_link)
-
-After downloading:
-
-* Place the `.pt` checkpoint file (e.g., `MTCPSL_best_model.pt`) inside your `output/` directory, or anywhere you prefer.
-* Update the `--checkpoint_path` argument accordingly when running the evaluation script.
-
-Example:
-
-```bash
-python RoBERTa\ Large\ Based/test_SPRS_MTCPSL_P_Mask_R.py \
-    --checkpoint_path ./output/MTCPSL_best_model.pt \
-    --test_dataset politifact_SPRS_nonrepeat.jsonl \
-    --test_output_name politifact_SPRS_nr
-```
----
-
 ## 🧩 Project Structure
 
 * `my_models.py`: Defines the MTCPSL model class.
